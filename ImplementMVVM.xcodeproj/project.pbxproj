@@ -22,9 +22,6 @@
 		9940503F256E5159001A2F61 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940503E256E5159001A2F61 /* TeamViewModel.swift */; };
 		9940504B256E58FE001A2F61 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940504A256E58FE001A2F61 /* PersonDetailsViewController.swift */; };
 		9940504F256E5E58001A2F61 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940504E256E5E58001A2F61 /* Extensions.swift */; };
-		99F93096256E89AC0079F179 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F93095256E89AC0079F179 /* Dynamic.swift */; };
-		99F930AC256EAE7C0079F179 /* ViewModelRX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F930AB256EAE7C0079F179 /* ViewModelRX.swift */; };
-		99F930AF256EB6A10079F179 /* ViewModelBond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F930AE256EB6A10079F179 /* ViewModelBond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +42,6 @@
 		9940503E256E5159001A2F61 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		9940504A256E58FE001A2F61 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		9940504E256E5E58001A2F61 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		99F93095256E89AC0079F179 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		99F930AB256EAE7C0079F179 /* ViewModelRX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelRX.swift; sourceTree = "<group>"; };
-		99F930AE256EB6A10079F179 /* ViewModelBond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBond.swift; sourceTree = "<group>"; };
 		DEDE53EEE33A2F7D775ACC24 /* Pods-ImplementMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplementMVVM.release.xcconfig"; path = "Target Support Files/Pods-ImplementMVVM/Pods-ImplementMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		EC8937B8965BA7D497BCDA18 /* Pods_ImplementMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplementMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,11 +99,10 @@
 				99F93089256E7BB50079F179 /* Controllers */,
 				9938FFC7256DB412007D2FA3 /* Networking */,
 				9938FFC2256DABE1007D2FA3 /* CustomView */,
-				99405041256E515D001A2F61 /* View Model */,
 				9925D1EC256DBCD0004BF3E3 /* Models */,
-				99F93087256E7B820079F179 /* Resources */,
 				99F93088256E7B8D0079F179 /* Storyboard */,
 				99F9308F256E7C880079F179 /* Utilities */,
+				99F93087256E7B820079F179 /* Resources */,
 				9938FFB9256DA968007D2FA3 /* Supporting */,
 				9938FFB1256DA829007D2FA3 /* Info.plist */,
 			);
@@ -150,17 +143,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		99405041256E515D001A2F61 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				9940503E256E5159001A2F61 /* TeamViewModel.swift */,
-				99F93095256E89AC0079F179 /* Dynamic.swift */,
-				99F930AB256EAE7C0079F179 /* ViewModelRX.swift */,
-				99F930AE256EB6A10079F179 /* ViewModelBond.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
 		99F93087256E7B820079F179 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +165,7 @@
 			children = (
 				9938FFA7256DA827007D2FA3 /* ViewController.swift */,
 				9940504A256E58FE001A2F61 /* PersonDetailsViewController.swift */,
+				9940503E256E5159001A2F61 /* TeamViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,16 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F930AF256EB6A10079F179 /* ViewModelBond.swift in Sources */,
 				9938FFA8256DA827007D2FA3 /* ViewController.swift in Sources */,
 				9940503F256E5159001A2F61 /* TeamViewModel.swift in Sources */,
-				99F930AC256EAE7C0079F179 /* ViewModelRX.swift in Sources */,
 				9938FFA4256DA827007D2FA3 /* AppDelegate.swift in Sources */,
 				9938FFBF256DAB90007D2FA3 /* PersonTableViewCell.swift in Sources */,
 				9938FFC5256DB3FE007D2FA3 /* NetworkingApi.swift in Sources */,
 				9940504F256E5E58001A2F61 /* Extensions.swift in Sources */,
 				9940504B256E58FE001A2F61 /* PersonDetailsViewController.swift in Sources */,
-				99F93096256E89AC0079F179 /* Dynamic.swift in Sources */,
 				9925D1EA256DB830004BF3E3 /* Constants.swift in Sources */,
 				9925D1E7256DB6B8004BF3E3 /* PersonInfo.swift in Sources */,
 				9938FFA6256DA827007D2FA3 /* SceneDelegate.swift in Sources */,

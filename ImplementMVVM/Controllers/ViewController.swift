@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    var teamViewModels = [TeamViewModel]()
-    var network = NetworkingApi.shared
-    var selectedPerson: TeamViewModel!
+    private var teamViewModels = [TeamViewModel]()
+    private var network = NetworkingApi.shared
+    private var selectedPerson: TeamViewModel!
     
-    @IBOutlet weak var teamTableView: UITableView!
+    @IBOutlet weak private var teamTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +22,12 @@ class ViewController: UIViewController {
         getPerson()
     }
     
-    func setupTableView() {
+    private func setupTableView() {
         let personNib = UINib.init(nibName: K.nibName, bundle: nil)
         self.teamTableView.register(personNib, forCellReuseIdentifier: K.personCellId)
     }
     
-    func getPerson() {
+    private func getPerson() {
         network.loadData( completion:  { person in
             self.teamViewModels = person.map { TeamViewModel(person: $0) }
             self.teamTableView.reloadData()
